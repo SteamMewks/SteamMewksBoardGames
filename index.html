@@ -1,0 +1,313 @@
+<!DOCTYPE html> <html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>機巧の遊戯卓 · SteamMewks</title>
+<meta name="description" content="通常チェス、変則チェス、ブレイクスルー、チェッカー、リバーシ、アリマア、ネファタフル、コリドール、ナイン・メンズ・モリス、4人チェス。23のプレイモードを、ひとりでも複数人でも楽しめる、SteamMewksの機巧の遊戯卓。">
+<meta name="theme-color" content="#202a24">
+<meta name="theme-color" content="#242018">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="機巧の遊戯卓">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/png" href="./icons/favicon.png">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/table-ui.css">
+</head>
+<body>
+<div id="clockworkBackdrop" aria-hidden="true">
+<svg class="gear gearA" viewBox="0 0 240 240">
+<defs>
+<linearGradient id="gearMetal" x2=".8" y2="1">
+<stop stop-color="#d2b26c"/>
+<stop offset=".45" stop-color="#6e4a27"/>
+<stop offset=".7" stop-color="#c19a52"/>
+<stop offset="1" stop-color="#513822"/>
+</linearGradient>
+<g id="mechanicalGear">
+<path d="M216.00,120.00 L215.89,124.52 L227.67,128.47 L226.19,139.68 L213.80,140.45 L212.73,144.85 L211.46,149.19 L221.81,156.05 L217.48,166.50 L205.31,164.03 L203.14,168.00 L200.79,171.86 L209.01,181.17 L202.12,190.14 L191.00,184.61 L187.88,187.88 L184.61,191.00 L190.14,202.12 L181.17,209.01 L171.86,200.79 L168.00,203.14 L164.03,205.31 L166.50,217.48 L156.05,221.81 L149.19,211.46 L144.85,212.73 L140.45,213.80 L139.68,226.19 L128.47,227.67 L124.52,215.89 L120.00,216.00 L115.48,215.89 L111.53,227.67 L100.32,226.19 L99.55,213.80 L95.15,212.73 L90.81,211.46 L83.95,221.81 L73.50,217.48 L75.97,205.31 L72.00,203.14 L68.14,200.79 L58.83,209.01 L49.86,202.12 L55.39,191.00 L52.12,187.88 L49.00,184.61 L37.88,190.14 L30.99,181.17 L39.21,171.86 L36.86,168.00 L34.69,164.03 L22.52,166.50 L18.19,156.05 L28.54,149.19 L27.27,144.85 L26.20,140.45 L13.81,139.68 L12.33,128.47 L24.11,124.52 L24.00,120.00 L24.11,115.48 L12.33,111.53 L13.81,100.32 L26.20,99.55 L27.27,95.15 L28.54,90.81 L18.19,83.95 L22.52,73.50 L34.69,75.97 L36.86,72.00 L39.21,68.14 L30.99,58.83 L37.88,49.86 L49.00,55.39 L52.12,52.12 L55.39,49.00 L49.86,37.88 L58.83,30.99 L68.14,39.21 L72.00,36.86 L75.97,34.69 L73.50,22.52 L83.95,18.19 L90.81,28.54 L95.15,27.27 L99.55,26.20 L100.32,13.81 L111.53,12.33 L115.48,24.11 L120.00,24.00 L124.52,24.11 L128.47,12.33 L139.68,13.81 L140.45,26.20 L144.85,27.27 L149.19,28.54 L156.05,18.19 L166.50,22.52 L164.03,34.69 L168.00,36.86 L171.86,39.21 L181.17,30.99 L190.14,37.88 L184.61,49.00 L187.88,52.12 L191.00,55.39 L202.12,49.86 L209.01,58.83 L200.79,68.14 L203.14,72.00 L205.31,75.97 L217.48,73.50 L221.81,83.95 L211.46,90.81 L212.73,95.15 L213.80,99.55 L226.19,100.32 L227.67,111.53 L215.89,115.48 Z M199.02,132.51 A80,80 0 0 1 170.35,182.17 L147.06,153.42 A43,43 0 0 0 162.47,126.73 Z M148.67,194.69 A80,80 0 0 1 91.33,194.69 L104.59,160.14 A43,43 0 0 0 135.41,160.14 Z M69.65,182.17 A80,80 0 0 1 40.98,132.51 L77.53,126.73 A43,43 0 0 0 92.94,153.42 Z M40.98,107.49 A80,80 0 0 1 69.65,57.83 L92.94,86.58 A43,43 0 0 0 77.53,113.27 Z M91.33,45.31 A80,80 0 0 1 148.67,45.31 L135.41,79.86 A43,43 0 0 0 104.59,79.86 Z M170.35,57.83 A80,80 0 0 1 199.02,107.49 L162.47,113.27 A43,43 0 0 0 147.06,86.58 Z M104,120 A16,16 0 1 0 136,120 A16,16 0 1 0 104,120 Z" fill="url(#gearMetal)" fill-rule="evenodd" stroke="#d6b77c" stroke-width="1.1"/>
+<circle cx="120" cy="120" r="29" fill="none" stroke="#d6b77c" stroke-width="2"/>
+<circle cx="120" cy="120" r="90" fill="none" stroke="#e0bf76" stroke-width="1"/>
+</g>
+</defs>
+<use href="#mechanicalGear"/>
+</svg>
+<svg class="gear gearB" viewBox="0 0 240 240">
+<use href="#mechanicalGear"/>
+</svg>
+<svg class="gear gearC" viewBox="0 0 240 240">
+<use href="#mechanicalGear"/>
+</svg>
+</div>
+<main id="app"> <section id="gameLibrary" aria-label="ゲーム選択"> <div class="libraryHeader">
+<div class="libraryActions">
+<button id="pwaInstall" type="button" onclick="installPWA()">インストール</button>
+<button id="aiRecordsButton" type="button" onclick="openAIRecords()">対局記録<small>AI戦績</small>
+</button>
+</div>
+<span class="titleKicker">STEAMMEWKS · BOARD GAMES</span>
+<h1>Clockwork Game Table</h1>
+<p>機巧の遊戯卓 <span>歯車の音を傍らに、一局。</span>
+</p>
+</div> <p id="pwaStatus" class="pwaStatus" role="status" aria-live="polite">
+</p>
+<span id="pwaVersion" class="pwaVersion">v.1bccf7bee27a</span>
+<section id="resumePanel" hidden aria-label="保存中の対局"> <div>
+<span class="resumeKicker">THE LAST TABLE</span>
+<p id="resumeSummary">
+</p>
+</div> <div class="resumeActions">
+<button class="resumePrimary" onclick="resumeMatch()">続きから</button>
+<button onclick="requestDiscardMatch()">破棄</button>
+</div> </section>
+<p id="resumeStatus" role="status">
+</p> <div class="libraryFilters" role="group" aria-label="遊ぶ人数で卓を絞り込む"> <button data-filter="all" aria-pressed="true" onclick="filterTables('all')">すべて</button>
+<button data-filter="1" aria-pressed="false" onclick="filterTables('1')">1人</button>
+<button data-filter="2" aria-pressed="false" onclick="filterTables('2')">2人</button>
+<button data-filter="group" aria-pressed="false" onclick="filterTables('group')">3・4人</button> </div>
+<div id="gameCards"> <button class="libraryCard" data-game-key="breakthrough" data-players="1 2" onclick="chooseGame('breakthrough')">
+<span class="libraryIcon" aria-hidden="true">♟</span>
+<span>
+<b>Breakthrough</b>
+<small>敵陣の最奥へ、先に突破せよ</small>
+<span class="libraryMeta">
+<span>1〜2人</span>
+<span>難易度：やさしい</span>
+</span>
+</span>
+<em>説明 →</em>
+</button> <button class="libraryCard" data-game-key="reversi" data-players="1 2 4" onclick="chooseGame('reversi')">
+<span class="libraryIcon" aria-hidden="true">◐</span>
+<span>
+<b>Reversi</b>
+<small>挟んで返す、盤上の陣取り</small>
+<span class="libraryMeta">
+<span>1・2・4人</span>
+<span>難易度：やさしい</span>
+</span>
+</span>
+<em>説明 →</em>
+</button> <button class="libraryCard" data-game-key="quoridor" data-players="1 2 3 4" onclick="chooseGame('quoridor')">
+<span class="libraryIcon" aria-hidden="true">╬</span>
+<span>
+<b>Quoridor</b>
+<small>壁で道を曲げる、最短路の駆け引き</small>
+<span class="libraryMeta">
+<span>1〜4人</span>
+<span>難易度：やさしい</span>
+</span>
+</span>
+<em>説明 →</em>
+</button> <button class="libraryCard" data-game-key="checkers" data-players="1 2" onclick="chooseGame('checkers')">
+<span class="libraryIcon" aria-hidden="true">◎</span>
+<span>
+<b>Checkers</b>
+<small>飛び越えて奪う、連鎖の駆け引き</small>
+<span class="libraryMeta">
+<span>1〜2人</span>
+<span>難易度：ふつう</span>
+</span>
+</span>
+<em>説明 →</em>
+</button> <button class="libraryCard" data-game-key="hnefatafl" data-players="1 2" onclick="chooseGame('hnefatafl')">
+<span class="libraryIcon" aria-hidden="true">♜</span>
+<span>
+<b>Hnefatafl</b>
+<small>王の脱出を巡る、非対称の包囲戦</small>
+<span class="libraryMeta">
+<span>1〜2人</span>
+<span>難易度：ふつう</span>
+</span>
+</span>
+<em>説明 →</em>
+</button> <button class="libraryCard" data-game-key="morris" data-players="1 2" onclick="chooseGame('morris')">
+<span class="libraryIcon" aria-hidden="true">◇</span>
+<span>
+<b>Morris</b>
+<small>配置・移動・飛びで三連を作る</small>
+<span class="libraryMeta">
+<span>1〜2人</span>
+<span>難易度：ふつう</span>
+</span>
+</span>
+<em>説明 →</em>
+</button> <button class="libraryCard" data-game-key="chess" data-players="1 2" onclick="chooseGame('chess')">
+<span class="libraryIcon" aria-hidden="true">♔</span>
+<span>
+<b>Chess</b>
+<small>標準ルールで王を追い詰める</small>
+<span class="libraryMeta">
+<span>1〜2人</span>
+<span>難易度：難しい</span>
+</span>
+</span>
+<em>説明 →</em>
+</button> <button class="libraryCard" data-game-key="chessVariant" data-players="1 2" onclick="chooseGame('chessVariant')">
+<span class="libraryIcon" aria-hidden="true">⚙</span>
+<span>
+<b>Variant Chess</b>
+<small>配置・除去・撹乱・昇格のスキル戦</small>
+<span class="libraryMeta">
+<span>1〜2人</span>
+<span>難易度：難しい</span>
+</span>
+</span>
+<em>説明 →</em>
+</button> <button class="libraryCard" data-game-key="arimaa" data-players="1 2" onclick="chooseGame('arimaa')">
+<span class="libraryIcon" aria-hidden="true">♘</span>
+<span>
+<b>Arimaa</b>
+<small>4歩で連携、罠と押し引きの攻防</small>
+<span class="libraryMeta">
+<span>1〜2人</span>
+<span>難易度：難しい</span>
+</span>
+</span>
+<em>説明 →</em>
+</button> <button class="libraryCard" data-game-key="fourChess" data-players="4" onclick="chooseGame('fourChess')">
+<span class="libraryIcon" aria-hidden="true">✢</span>
+<span>
+<b>4-Player Chess</b>
+<small>十字盤で4軍がぶつかる多人数チェス</small>
+<span class="libraryMeta">
+<span>4人専用</span>
+<span>難易度：難しい</span>
+</span>
+</span>
+<em>説明 →</em>
+</button> </div> <p class="libraryFoot">SteamMewks · 23 PLAY MODES<br>
+<span class="difficultyNote">難易度は覚えやすさの目安 · 1人は機巧士（AI）との対局</span>
+</p> </section> <section id="startScreen" hidden aria-label="ゲームの説明とモード選択"> <header class="introHeader">
+<h1>
+<svg class="workshopSeal" viewBox="0 0 240 240" aria-hidden="true">
+<use href="#mechanicalGear"/>
+</svg>
+<span class="titleKicker">STEAMMEWKS · GAME TABLE</span>
+<span id="gameTitle">Chess</span>
+</h1>
+<p id="gameCatch" class="brand">
+</p>
+</header> <article id="gameIntro" tabindex="0" aria-label="遊び方の紹介">
+<p id="introLead">
+</p>
+<dl>
+<dt>勝利の条件</dt>
+<dd id="introGoal">
+</dd>
+<dt>駒の扱い</dt>
+<dd id="introMove">
+</dd>
+<dt>卓主の手引き</dt>
+<dd id="introTip">
+</dd>
+</dl>
+<p id="introNote">
+</p>
+</article> <section id="qPlayerChoices" hidden aria-label="コリドールの人数選択"> <h2 class="modeHeading">人数を選ぶ</h2> <div class="qPlayerButtons" role="group" aria-label="対戦人数"> <button type="button" data-q-players="2" onclick="setQuoridorPlayers(2)" aria-pressed="true">２人<small>１人10枚</small>
+</button> <button type="button" data-q-players="3" onclick="setQuoridorPlayers(3)" aria-pressed="false">３人<small>１人８枚</small>
+</button> <button type="button" data-q-players="4" onclick="setQuoridorPlayers(4)" aria-pressed="false">４人<small>１人６枚</small>
+</button> </div>
+<p id="qPlayerNote" class="menuNote">
+</p>
+</section> <section id="rPlayerChoices" hidden aria-label="リバーシの人数選択">
+<h2 class="modeHeading">人数を選ぶ</h2>
+<div class="qPlayerButtons" role="group" aria-label="対戦人数">
+<button type="button" data-r-players="2" onclick="setReversiPlayers(2)" aria-pressed="true">２人<small>通常ルール</small>
+</button>
+<button type="button" data-r-players="4" onclick="setReversiPlayers(4)" aria-pressed="false">４人<small>４色の個人戦</small>
+</button>
+</div>
+<p id="rPlayerNote" class="menuNote">
+</p>
+</section> <h2 class="modeHeading">対局の相手を選ぶ</h2> <div class="modeChoices"> <label class="soloOrder">あなたの手番<select id="soloOrder" onchange="setSoloOrder(this.value)">
+<option id="orderFirst" value="first">先手（白）</option>
+<option id="orderSecond" value="second">後手（黒）</option>
+</select>
+</label> <button id="localMode" data-standard-mode data-engraving="I" onclick="startGame('normal')">2人で対局<small>1台の画面を交互に操作</small>
+</button> <button id="soloMode" data-standard-mode data-engraving="II" onclick="startGame('single')">機巧士と対局<small id="soloModeNote">AIとの1人対局・待ったも使えます</small>
+</button> <button data-chess-variant data-engraving="I" onclick="startGame('skill')">2人で対局<small>仕掛けを駆使する変則戦</small>
+</button> <button data-chess-variant data-engraving="II" onclick="startGame('singleSkill')">機巧士と対局<small id="variantSoloNote">仕掛けを使うAIとの1人対局</small>
+</button> </div> <p class="menuNote">対局中は「遊戯指南」でルールを開けます。<br>対局は直近の1局を自動保存。タイトルの「続きから」で再開できます。</p> <button class="libraryBack" onclick="showGameLibrary()">← 遊戯卓の一覧へ</button> </section> <section id="gameUI" style="display:none"> <header id="topBar">
+<strong id="modeBadge">
+</strong>
+<div id="message" role="status" aria-live="polite">
+</div>
+</header> <div id="modeTools"> <div id="soloAssist" hidden>
+<button id="aiLevel" onclick="showHelp('ai')">AI Lv.1 / 50</button>
+<button id="undoButton" onclick="undoMove()">↶ 待った</button>
+</div> <div id="skillTools" hidden> <div id="scoreBar">
+<span id="whitePoints">白 <b id="whitePt">2</b>pt</span>
+<span id="skillTurn">
+</span>
+<span id="blackPoints">黒 <b id="blackPt">2</b>pt</span>
+</div> <div id="skillButtons" class="skills" aria-label="手番側のスキル"> <button onclick="activateSkill('placePawn')">配置 <small>2pt</small>
+</button> <button onclick="activateSkill('deleteEnemyPawn')">除去 <small>3pt</small>
+</button> <button onclick="useSkill('shuffleEnemy')">撹乱 <small>4pt</small>
+</button> <button onclick="activateSkill('promotePawn')">昇格 <small>6pt</small>
+</button> </div> <div id="shuffleControls" hidden>
+<span id="shuffleCount">白0/5・黒0/5</span>
+<button id="shuffleConfirm" onclick="confirmShuffle()">入替確定</button>
+<button onclick="cancelShuffle()">取消</button>
+</div> </div> <div id="arTools" hidden>
+<span id="arStatus">
+</span>
+<button id="arPush" onclick="arSetMode('push')">押す</button>
+<button id="arPull" onclick="arSetMode('pull')">引く</button>
+<button id="arBack" onclick="arBack()">戻す</button>
+<button id="arDone" onclick="arConfirm()">配置完了</button>
+</div> <div id="qTools" hidden>
+<span id="qStatus">
+</span>
+<button id="qPawn" onclick="qSetMode('pawn')">駒移動</button>
+<button id="qWall" onclick="qSetMode('wall')">壁を置く</button>
+<button id="qConfirm" onclick="qConfirmWall()" hidden>設置</button>
+<button id="qCancel" onclick="qCancelWall()" hidden>取消</button>
+<span id="qPlacementStatus" role="status" aria-live="polite" hidden>
+</span>
+</div> <div id="normalTools">白と黒を交互に操作する2人対戦</div> </div> <div id="boardWrap">
+<div id="board" aria-label="チェス盤">
+</div>
+</div> <section id="hintPanel" aria-label="共通ヒント欄"> <nav id="hintTabs" aria-label="説明を選択"> <button onclick="showHelp(null)" data-help="auto">手引き</button>
+<button onclick="showHelp('colors')" data-help="colors">盤上の印</button>
+<button onclick="showHelp('rules')" data-help="rules">ルール</button>
+<button id="modeHelp" onclick="showHelp(isSkillMode()?'skills':'ai')" data-help="mode">機巧士・AI</button> </nav> <div id="hint" role="status" aria-live="polite">
+<div id="hintMain">
+</div>
+<div id="hintWarning">
+</div>
+</div> </section> <nav id="gameActions">
+<button onclick="requestRestart()">指し直す</button>
+<button onclick="requestMenu()">中断する</button>
+<button id="actionGuide" onclick="openGameGuide()">遊戯指南</button>
+</nav> <footer id="gameFooter">SteamMewks · Simple Chess</footer> </section> </main> <dialog id="aiRecordsDialog" aria-labelledby="aiRecordsTitle"> <header class="aiRecordsHeader">
+<h2 id="aiRecordsTitle">機巧士との対局記録</h2>
+<button type="button" onclick="closeAIRecords()" autofocus>閉じる</button>
+</header> <p class="aiRecordsNote">機巧士（AI）との勝負を記した帳簿です。各卓の成績と、プレイに応じて強さが変わる適応型AIのレベルを確認できます。通常チェスと変則チェスの記録は独立しています。<br>リセットすると、そのゲームの成績と強さの調整履歴を消去し、Lv.1に戻します。</p> <div id="aiRecordsList">
+</div>
+<p id="aiRecordsStatus" role="status" aria-live="polite">
+</p> </dialog> <dialog id="guideDialog" class="workshopDialog" aria-labelledby="guideTitle"> <header class="dialogHeader">
+<div>
+<span class="dialogKicker">TABLE MANUAL</span>
+<h2 id="guideTitle">遊戯指南</h2>
+</div>
+<button onclick="closeGameGuide()" autofocus>閉じる</button>
+</header>
+<div id="guideBody" class="dialogBody">
+</div> </dialog> <dialog id="actionDialog" class="workshopDialog" aria-labelledby="actionTitle" aria-describedby="actionText" oncancel="pendingUIAction=null"> <header class="dialogHeader">
+<h2 id="actionTitle">
+</h2>
+</header>
+<p id="actionText">
+</p>
+<div class="dialogActions">
+<button onclick="cancelUIAction()" autofocus>戻る</button>
+<button id="actionConfirm" onclick="confirmUIAction()">実行する</button>
+</div> </dialog> <p id="boardKeyboardHelp" class="visuallyHidden">矢印キーで盤面を移動し、EnterまたはSpaceで選択・決定します。HomeとEndで行の両端へ移動できます。</p> <aside id="storageNotice" hidden role="status">
+<span id="storageNoticeText">
+</span>
+<button onclick="document.getElementById('storageNotice').hidden=true" aria-label="保存についての通知を閉じる">閉じる</button>
+</aside> <script type="module" src="./js/app.js">
+</script>
+</body>
+</html>

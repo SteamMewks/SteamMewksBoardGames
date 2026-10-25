@@ -1,0 +1,43 @@
+
+/* Shared SteamMewks table UI */
+:root{--ui-brass:#b39455;--ui-paper:#efddae;--ui-muted:#c5bd9c}
+#gameLibrary{box-sizing:border-box;width:100%;max-width:560px;height:100dvh;min-height:0;display:flex;flex-direction:column;justify-content:flex-start;gap:8px;padding:max(10px,env(safe-area-inset-top)) 10px max(8px,env(safe-area-inset-bottom));overflow:hidden}
+#gameLibrary .libraryHeader{position:relative;flex:none;width:100%;padding:48px 0 0;grid-column:1/-1;grid-row:auto;align-self:stretch}
+#gameLibrary .libraryActions{position:absolute;top:0;right:0;display:flex;gap:6px}
+#gameLibrary .libraryActions button{position:static;min-height:40px;padding:5px 10px;font:12px/1.25 system-ui;border-radius:6px}
+#gameLibrary .libraryActions button small{display:block;font-size:10px;color:#c9bd9b}
+#gameLibrary .titleKicker{font:9px/1.4 Georgia,serif;letter-spacing:.18em;color:#bda370}
+#gameLibrary .libraryHeader h1{font:normal 30px/1 Georgia,serif!important;letter-spacing:.025em;color:#efddae;margin:5px 0;text-shadow:0 2px 1px #000}
+#gameLibrary .libraryHeader h1 br{display:none}
+#gameLibrary .libraryHeader h1 br:after{content:' '}
+#gameLibrary .libraryHeader p{display:block;margin:5px 0 0;font-size:12px;line-height:1.4;letter-spacing:.12em;color:#bda573}
+#gameLibrary .libraryHeader p span{display:block;font-size:10px;letter-spacing:.05em;color:#b9b29c}
+#gameCards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:minmax(0,1fr);flex:1 1 0;min-height:0;gap:7px;width:100%}
+#gameLibrary .libraryCard{display:flex;align-items:center;min-width:0;min-height:0!important;padding:7px;gap:7px;border:1px solid #b39455;border-radius:6px;background:linear-gradient(115deg,#5a4b31,#282e24 60%);box-shadow:inset 0 0 0 2px #111b16,0 3px 5px #0005;text-align:left;grid-column:auto}
+#gameLibrary .libraryIcon{flex:0 0 26px;width:26px;font:25px Georgia,serif;text-align:center;color:#ead39a}
+#gameLibrary .libraryCard>span:nth-child(2){flex:1;min-width:0}
+#gameLibrary .libraryCard b{display:block;font:500 13px/1.2 Georgia,serif;color:#efddae;overflow-wrap:anywhere}
+#gameLibrary .libraryCard small{display:block;margin-top:4px;font:10px/1.4 system-ui;color:#c5bd9c}
+#gameLibrary .libraryCard em{display:none}
+#gameLibrary .libraryMeta{display:flex;flex-wrap:wrap;gap:0 4px;font:10px/1.4 system-ui;margin-top:3px}
+#gameLibrary .libraryMeta span:first-child{color:#bde0cd}
+#gameLibrary .libraryFoot{flex:none;margin:0;padding:0;font:10px/1.4 system-ui;text-align:center;color:#b9aa87;letter-spacing:.03em}
+#gameLibrary .libraryFilters{gap:6px;margin:0;flex:none}
+#gameLibrary .libraryFilters button{min-height:34px;font-size:11px}
+#gameLibrary .pwaVersion{position:absolute;top:18px;left:12px;font-size:9px}
+#gameLibrary #resumePanel{flex:none;padding:6px;gap:6px;flex-direction:row}
+#gameLibrary #resumeSummary{font-size:11px;margin:0;line-height:1.3}
+#gameLibrary .resumeKicker{display:none}
+#gameLibrary .resumeActions button{min-height:36px;font-size:11px}
+#startScreen .introHeader{height:auto!important;display:block!important;padding:0!important;border:0!important;background:none!important}
+#startScreen h1{font:normal 27px/1.2 Georgia,serif;color:#efddae;letter-spacing:.025em}
+#startScreen .brand{font-size:12px;line-height:1.5;color:#d2c39d}
+#gameIntro{min-height:0;overflow-y:auto;overscroll-behavior:contain;border:1px solid #927344;border-radius:8px;background:linear-gradient(135deg,#3e3c2ae8,#202a24f2);padding:12px;font:13px/1.75 system-ui;color:#e3dfce}
+#gameIntro dt{font-size:12px;color:#ebc983;margin-top:10px}
+#gameIntro dd{margin:3px 0 0}
+#startScreen .modeChoices button{min-height:52px;border-radius:6px;font-size:14px}
+#startScreen .modeChoices button small{font-size:11px}
+#startScreen .libraryBack{min-height:40px;font-size:12px}
+button:focus-visible{outline:2px solid #f4d58d;outline-offset:2px}
+@media(max-height:680px){#gameLibrary{gap:5px}#gameLibrary .libraryHeader{padding-top:43px}#gameLibrary .libraryHeader h1{font-size:26px!important}#gameLibrary .libraryCard{padding:5px;gap:5px}#gameLibrary .libraryIcon{flex-basis:20px;width:20px;font-size:20px}#gameLibrary .libraryCard b{font-size:12px}#gameLibrary .libraryCard small{margin-top:2px}#gameLibrary .libraryHeader p span{display:none}}
+@media(orientation:landscape) and (max-height:550px){#gameLibrary{max-width:850px;display:flex}#gameCards{grid-template-columns:repeat(3,minmax(0,1fr))}#gameLibrary .libraryHeader{padding:0 180px 0 0}#gameLibrary .libraryHeader h1{font-size:24px!important}#gameLibrary .libraryHeader p{display:none}#gameLibrary .libraryFoot{font-size:9px}}
