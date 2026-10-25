@@ -176,7 +176,7 @@
 </span>
 </span>
 <em>説明 →</em>
-</button> </div> <p class="libraryFoot">SteamMewks · 23 PLAY MODES<br>
+</button> </div> <p class="libraryFoot" style="text-align: center;">SteamMewks · 23 PLAY MODES<br>
 <span class="difficultyNote">難易度は覚えやすさの目安 · 1人は機巧士（AI）との対局</span>
 </p> </section> <section id="startScreen" hidden aria-label="ゲームの説明とモード選択"> <header class="introHeader">
 <h1>
@@ -228,7 +228,9 @@
 </button> <button id="soloMode" data-standard-mode data-engraving="II" onclick="startGame('single')">機巧士と対局<small id="soloModeNote">AIとの1人対局・待ったも使えます</small>
 </button> <button data-chess-variant data-engraving="I" onclick="startGame('skill')">2人で対局<small>仕掛けを駆使する変則戦</small>
 </button> <button data-chess-variant data-engraving="II" onclick="startGame('singleSkill')">機巧士と対局<small id="variantSoloNote">仕掛けを使うAIとの1人対局</small>
-</button> </div> <p class="menuNote">対局中は「遊戯指南」でルールを開けます。<br>対局は直近の1局を自動保存。タイトルの「続きから」で再開できます。</p> <button class="libraryBack" onclick="showGameLibrary()">← 遊戯卓の一覧へ</button> </section> <section id="gameUI" style="display:none"> <header id="topBar">
+</button> </div> <p class="menuNote">対局中は「遊戯指南」でルールを開けます。<br>対局は直近の1局を自動保存。タイトルの「続きから」で再開できます。</p> <div style="text-align: center;">
+<button type="button" class="libraryBack" style="display: inline-block;" onclick="showGameLibrary()">← 遊戯卓の一覧へ</button>
+</div> </section> <section id="gameUI" style="display:none"> <header id="topBar">
 <strong id="modeBadge">
 </strong>
 <div id="message" role="status" aria-live="polite">
