@@ -876,7 +876,7 @@ export async function arAnimate(e, t) {
       set_shuffleVisualCleanup(null);
       set_animating(false);
       set_moveAnimations([]);
-      arDecorate();
+      drawBoard();
     }
   }
 }
@@ -902,7 +902,7 @@ export function arHint() {
 export function arDecorate() {
   const e = arOptions();
   const t = selected && !ar.setup ? arLegalActions().filter(e => e.sx === selected.x && e.sy === selected.y && e.kind === arMode) : [];
-  for (const r of boardEl.children) {
+  for (const r of boardEl.querySelectorAll('.cell')) {
     const n = +r.dataset.x, o = +r.dataset.y, a = board[o][n];
     if ((n === 2 || n === 5) && (o === 2 || o === 5)) {
       r.classList.add('arTrap');
